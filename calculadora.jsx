@@ -103,7 +103,6 @@ function App() {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
-          {/* Campos de entrada */}
           <div className="space-y-4">
             <div>
               <label htmlFor="numero1" className="block text-sm font-medium text-gray-700 mb-1">
@@ -132,8 +131,6 @@ function App() {
               />
             </div>
           </div>
-
-          {/* Botões de operações */}
           <div className="grid grid-cols-2 gap-3">
             <Button
               onClick={calcularSoma}
@@ -165,7 +162,7 @@ function App() {
             </Button>
           </div>
 
-          {/* Botão de média (ocupa toda a largura) */}
+          
           <Button
             onClick={calcularMedia}
             className="w-full flex items-center justify-center gap-2 h-12 bg-blue-600 hover:bg-blue-700 transition-colors"
@@ -174,7 +171,7 @@ function App() {
             Média
           </Button>
 
-          {/* Área de resultado */}
+         
           {resultado && (
             <div className="bg-gray-50 rounded-lg p-4 border-2 border-gray-200">
               <div className="text-center">
@@ -190,7 +187,7 @@ function App() {
             </div>
           )}
 
-          {/* Botão limpar */}
+    
           <Button
             onClick={limparCampos}
             variant="outline"
